@@ -9,7 +9,7 @@ const uiti = global.uiti
 import { timeBanner } from 'utils/api/advert'
 
 export default {
-  created () {
+  mounted () {
     // console.log(global)
     console.log(uiti)
     this.getTimeBanner()

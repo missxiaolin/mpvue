@@ -10,7 +10,7 @@ export default {
     return {
     }
   },
-  created () {
+  mounted () {
     console.log('Index')
   },
 
