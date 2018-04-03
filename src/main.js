@@ -4,6 +4,10 @@ import App from './App'
 Vue.config.productionTip = false
 App.mpType = 'app'
 
+// 增加全局方法
+import uiti from 'utils/util'
+global.uiti = uiti
+
 const app = new Vue(App)
 app.$mount()
 

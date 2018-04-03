@@ -5,11 +5,13 @@
 </template>
 
 <script>
+const uiti = global.uiti
 import { timeBanner } from 'utils/api/advert'
 
 export default {
   created () {
-    console.log(global)
+    // console.log(global)
+    console.log(uiti)
     this.getTimeBanner()
   },
   methods: {
