@@ -5,9 +5,19 @@
 </template>
 
 <script>
+import { timeBanner } from 'utils/api/advert'
+
 export default {
   created () {
-    console.log('time')
+    this.getTimeBanner()
+  },
+  methods: {
+    // 获取倒计时广告
+    async getTimeBanner () {
+      let data = await timeBanner()
+      console.log('time')
+      console.log(data)
+    }
   }
 }
 </script>
