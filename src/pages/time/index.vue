@@ -9,6 +9,7 @@ import { timeBanner } from 'utils/api/advert'
 
 export default {
   created () {
+    console.log(global)
     this.getTimeBanner()
   },
   methods: {
