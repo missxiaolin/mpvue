@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     Index
+    <rich-text :nodes="content"></rich-text>
   </div>
 </template>
 
@@ -8,6 +9,7 @@
 export default {
   data () {
     return {
+      content: `<div style="color:red">dsads</div>`
     }
   },
   mounted () {
