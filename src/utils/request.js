@@ -25,7 +25,7 @@ request.interceptors.response.use(
   (err, promise) => {
     // 错误信息
     console.log(err)
-    return promise.resolve()
+    return promise.reject(err)
   }
 )
 
